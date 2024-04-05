@@ -1,0 +1,278 @@
+.dashboard-header {
+  padding: 20px 0;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+.dropdown button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progress-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.tasks {
+  border-color: #28a745;
+}
+
+.assignments {
+  border-color: #ffc107;
+}
+
+.homework {
+  border-color: #dc3545;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-name {
+  font-size: 15px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-left: 0;
+    /* Remove left margin on smaller screens */
+    margin-top: 10px;
+    /* Add some space above the input field */
+  }
+
+  .user-info {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .progress-circle {
+    margin: 10px;
+  }
+}
+
+.dropdown-accordion {
+  width: 201px;
+  /* Width as per the image */
+  border-radius: 10px;
+  /* Radius as per the image */
+  background: linear-gradient(180deg, #072828 0%, #134848 100%);
+  border: none;
+}
+
+.dropdown-accordion .btn {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.dropdown-accordion .btn:focus {
+  box-shadow: none;
+}
+
+.dropdown-accordion .dropdown-menu {
+  width: 100%;
+  /* Match the width of the dropdown button */
+}
+
+.icons-notificiation-logo {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  gap: 10px;
+}
+
+.circle2 {
+  width: 105px;
+  height: 105px;
+  background: linear-gradient(180deg, #021A1A 0%, #164F4F 100%);
+  border: 5px solid #6DE907;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  /* Centers the circle2 and adds space between them */
+  color: white;
+  /* Text color */
+  font-size: 15px;
+  /* Adjust as needed */
+  position: relative;
+}
+
+.circle2::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  border: 5px solid #6DE907;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.input-image {
+  margin-top: 2rem;
+  height: 60px;
+}
+
+.input-field {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  flex-grow: 1;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 2rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notepad-container {
+  overflow: hidden;
+  /* Add relative positioning so that the pseudo-element can be positioned inside this container */
+  position: relative;
+}
+
+.notepad {
+  width: 349px;
+  height: 202px;
+  background: linear-gradient(#021A1A, #1A444A);
+  border-radius: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.notepad textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  resize: none;
+  outline: none;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.notepad textarea {
+  background-image: linear-gradient(white 0.1em, transparent 0.1em);
+  background-size: 100% 2em;
+}
+
+
+#loader {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: conic-gradient(#114444, #021A1A);
+  z-index: 1000;
+  mask: radial-gradient(farthest-side, transparent calc(100% - 6px), #114444 100%);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.circle-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.outer-circle {
+  border: 5px solid #6DE907;
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  background-color: transparent;
+}
+
+.inner-circle {
+  border: 1px solid #000;
+  background-color: transparent;
+  /* transparent background */
+  border-radius: 50%;
+  width: 102px;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.text-container {
+  color: black;
+  /* black text color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tasks-text {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0;
+}
+
+.number {
+  font-size: 22px;
+  margin: 0;
+}

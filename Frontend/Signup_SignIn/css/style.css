@@ -1,0 +1,125 @@
+.left-column {
+    background: url('../images/image\ \(1\).png') no-repeat;
+    background-size: cover;
+    background-size: contain; 
+    background-attachment: fixed;
+  }
+  
+  .full-height {
+    height: 100vh; 
+    display: flex; 
+  }
+  
+  .sign-up-form {
+    padding: 40px;
+    max-width: 700px;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
+  }
+  
+  .button_color{
+    background-color: #6DE907 ;
+    color: #fff;
+    height: 3rem;
+  }
+  a{
+    color: #6DE907;
+  }
+
+  .btn-outline-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+@media (max-width: 767px) {
+  .left-column {
+    display: none;
+  }
+
+  .full-height,
+  .sign-up-form {
+    padding: 20px; 
+    margin: auto;
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .sign-up-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .sign-up-form .form-control,
+  .sign-up-form .btn,
+  .sign-up-form .btn-outline-secondary {
+    width: 100%; 
+    margin-bottom: 15px; 
+  }
+
+  .sign-up-form .btn {
+    padding: 10px 0;
+  }
+
+  .sign-up-form img {
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .sign-up-form {
+    border: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .left-column {
+    background-size: cover;
+    background-size: contain; 
+    background-attachment: fixed;
+    width: 50%;
+  }
+
+  .sign-up-form {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .sign-up-form h2 {
+    font-size: 1.5rem; 
+    position: static;
+    margin-bottom: 1rem; 
+  }
+
+  .sign-up-form .form-control,
+  .sign-up-form .btn {
+    font-size: 1rem; 
+    padding: 0.8rem; 
+  }
+
+  .sign-up-form .btn {
+    margin-top: 0.5rem; 
+  }
+  .heading{
+    position: relative;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}

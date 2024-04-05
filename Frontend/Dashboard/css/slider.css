@@ -1,0 +1,170 @@
+.sidebar {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right: 1px solid black;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  /* right: 25px; */
+  /* border: 1px solid red; */
+  font-size: 36px;
+  /* margin-left: 50px; */
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+  /* Default margin matching the sidebar width */
+}
+
+
+.minimized {
+  width: 80px;
+}
+
+.minimized a {
+  justify-content: center;
+  padding: 8px;
+  text-align: center;
+}
+
+.minimized a span {
+  display: none !important;
+}
+
+.minimized a i {
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+
+.minimized .closebtn {
+  right: 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 50px;
+  /* Adjust as needed */
+  border-radius: 50%;
+  /* Make it round */
+}
+
+.user-name {
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.user-role {
+  margin-left: 10px;
+  color: black;
+  font-size: 0.8em;
+}
+
+.closebtn .imageofuser {
+  width: 20px;
+  /* Adjust as needed */
+}
+
+/* Style changes when sidebar is minimized */
+.minimized .sidebar-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.minimized .user-profile {
+  flex-direction: column;
+  align-items: center;
+}
+
+.minimized .user-profile .user-name,
+.minimized .user-profile .user-role {
+  display: none;
+}
+
+.minimized .profile_slider ,
+.minimized .user-name .user-role .hr-11 {
+  display: none;
+}
+
+.minimized .closebtn {
+  align-self: flex-start;
+  margin-left: 0;
+  padding-left: 20px;
+  /* Adjust the padding to fit your design */
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6DE907;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-active::after {
+  opacity: 1;
+}
+
+.item-active {
+  background-color: white;
+  color: #6DE907;
+}
+
+.item-active .icon-container::after {
+  opacity: 0;
+}
+
+.item-active span.text_color {
+  color: #6DE907;
+}
+
+.profile_slider_inner{
+  display: flex;
+  width: 100%; 
+}

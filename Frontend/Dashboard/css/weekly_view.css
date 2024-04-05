@@ -1,0 +1,81 @@
+#calendar-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  
+  }
+
+  #calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  #weekdays-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative; /* Position relative for the pseudo element */
+  }
+
+  .weekday {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    height: 4vh;
+  }
+  
+  #time-slots-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Changed from 5vh to 100% */
+  }
+  
+  .time-slot:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    bottom: 0;
+  }
+  
+  .time-slot {
+    padding: 10px;
+    position: relative;
+    flex-grow: 1; /* Add flex-grow */
+  }
+  
+  .time-slot {
+    border: none;
+  }
+
+.btn_color {
+    margin: 0 10px;
+    background: linear-gradient(180deg, #072828 0%, #134848 100%);
+    color: white;
+    padding: 5px 10px;
+}
+
+.select-btn {
+    width: 200px;
+    height: 4vh;
+    background: linear-gradient(180deg, #072828 0%, #134848 100%);
+    color: rgb(184, 180, 180);
+    text-shadow: black;
+
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    display: inline-block;
+}

@@ -1,0 +1,277 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+
+  align-items: flex-start;
+}
+
+.card {
+  width: 375px;
+  height: 228px;
+
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s; /* Add color to the transition */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+.card:hover {
+  background: linear-gradient(135deg, #042020 0%, #134747 100%);
+  color: white; /* Change text color to white on hover */
+}
+
+
+
+.card-title {
+  margin: 1px;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-content,
+.card-grade {
+  color: inherit;
+}
+
+.card-grade {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  background-color: #62CB0B;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 55px;
+  width: 60px;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.input-image {
+  margin-top: 2rem;
+  height: 60px;
+}
+
+.input-field {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  flex-grow: 1;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 2rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-button {
+  padding: 10px 20px;
+  margin-top: 2rem;
+  height: 3.5rem;
+  width: 10.5rem;
+
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #021A1A 0%, #114444 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  margin-right: 8px;
+}
+
+.gpa {
+  margin-left: 28px;
+  font-size: 1.1rem;
+  color: #62CB0B;
+  font-weight: bold;
+}
+
+.minus-btn {
+  position: relative;
+  left: 18rem;
+  top: -0.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 37% !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -11rem;
+}
+
+
+/* The Close Button */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalTitle {
+  background: linear-gradient(135deg, #021A1A 0%, #114444 100%);
+  color: white;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+}
+
+.gradient-button2 {
+  background: linear-gradient(180deg, #021A1A 0%, #114444 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+  width: 188px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-button:focus {
+  outline: none;
+}
+
+.grading-policy table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grading-policy th,
+.grading-policy td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.grading-policy th {
+  background-color: #021A1A;
+  color: white;
+  border-radius: 5px;
+}
+
+.grading-policy tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.grading-policy tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.grading-policy tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adjust shadow as needed */
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(145deg, #052323, #0F3F3F);
+  /* Gradient from the design */
+  color: #ffffff;
+  padding: 20px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #dddddd;
+  /* Adjust color as needed */
+}
+
+th {
+  background-color: #eeeeee;
+  /* Adjust color as needed */
+}
+
+.text-input {
+  width: 193px;
+  height: 47px;
+  background: linear-gradient(145deg, #052323, #0F3F3F);
+  /* Gradient from the design */
+  color: white;
+  /* Text color */
+  border: none;
+  padding-left: 10px;
+  /* Adjust as needed */
+}
